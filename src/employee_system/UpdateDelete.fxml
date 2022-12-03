@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="912.0" prefWidth="1288.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employee_system.UpdateDeleteController">
+   <children>
+      <TextField fx:id="fname" layoutX="287.0" layoutY="194.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lname" layoutX="287.0" layoutY="253.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="age" layoutX="287.0" layoutY="369.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="salary" layoutX="287.0" layoutY="308.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="address" layoutX="287.0" layoutY="487.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="department" layoutX="287.0" layoutY="426.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="gender" layoutX="287.0" layoutY="606.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="education" layoutX="287.0" layoutY="667.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="690.0" layoutY="260.0" prefHeight="45.0" prefWidth="163.0" text="Nationality">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="690.0" layoutY="321.0" prefHeight="45.0" prefWidth="163.0" text="Mother Language">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="690.0" layoutY="379.0" prefHeight="45.0" prefWidth="163.0" text="Other Language">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="690.0" layoutY="201.0" prefHeight="45.0" prefWidth="163.0" text="Experience">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="186.0" prefHeight="45.0" prefWidth="163.0" text="First Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="478.0" prefHeight="45.0" prefWidth="163.0" text="Address">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="539.0" prefHeight="45.0" prefWidth="163.0" text="Date_Of_Birthe">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="597.0" prefHeight="45.0" prefWidth="163.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="649.0" prefHeight="45.0" prefWidth="163.0" text="Education">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="424.0" prefHeight="45.0" prefWidth="163.0" text="Department">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="364.0" prefHeight="45.0" prefWidth="163.0" text="Age">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="306.0" prefHeight="45.0" prefWidth="163.0" text="Salary">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="245.0" prefHeight="45.0" prefWidth="163.0" text="Last Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="find" layoutX="332.0" layoutY="82.0" mnemonicParsing="false" onAction="#getEmployeeById" prefHeight="57.0" prefWidth="101.0" stylesheets="@cssfile.css" text="Find">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Button>
+      <TextField fx:id="id" layoutX="127.0" layoutY="95.0" prefHeight="31.0" prefWidth="144.0" promptText="Enter ID to search" />
+      <Label layoutX="77.0" layoutY="93.0" prefHeight="35.0" prefWidth="50.0" text="ID">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="update" layoutX="671.0" layoutY="533.0" mnemonicParsing="false" onAction="#uPdateEmployee" prefHeight="70.0" prefWidth="284.0" stylesheets="@cssfile.css" text="Update Employee">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="978.0" layoutY="533.0" mnemonicParsing="false" onAction="#deleteEmployee" prefHeight="70.0" prefWidth="284.0" stylesheets="@cssfile.css" text="Delete Employee">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Button>
+      <TextField fx:id="date" layoutX="287.0" layoutY="549.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="moth" layoutX="897.0" layoutY="321.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="oth" layoutX="897.0" layoutY="382.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="natio" layoutX="897.0" layoutY="266.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="exp" layoutX="897.0" layoutY="207.0" prefHeight="38.0" prefWidth="346.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="479.0" layoutY="26.0" prefHeight="45.0" prefWidth="334.0" text="Update / Delete Employee">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

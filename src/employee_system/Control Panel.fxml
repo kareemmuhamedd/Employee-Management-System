@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="831.0" prefWidth="1224.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employee_system.ControlPanelController">
+   <children>
+      <Label layoutX="483.0" layoutY="82.0" prefHeight="57.0" prefWidth="259.0" text="Control Panel">
+         <font>
+            <Font name="Agency FB Bold" size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="insert" layoutX="152.0" layoutY="419.0" mnemonicParsing="false" onAction="#insertEmployee" prefHeight="59.0" prefWidth="210.0" stylesheets="@cssfile.css" text="Insert Employee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="view" layoutX="152.0" layoutY="333.0" mnemonicParsing="false" onAction="#UpdateDeleteEmployee" prefHeight="59.0" prefWidth="210.0" stylesheets="@cssfile.css" text="Ubdate / Delete">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="view" layoutX="152.0" layoutY="243.0" mnemonicParsing="false" onAction="#viewEmployee" prefHeight="59.0" prefWidth="210.0" stylesheets="@cssfile.css" text="View Employee">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

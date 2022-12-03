@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="648.0" prefWidth="849.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employee_system.LoginScreenUIController">
+   <children>
+      <Label fx:id="dbCon" layoutX="349.0" layoutY="488.0" prefHeight="52.0" prefWidth="238.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="check" layoutX="528.0" layoutY="349.0" prefHeight="52.0" prefWidth="238.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Button fx:id="che" layoutX="619.0" layoutY="234.0" mnemonicParsing="false" onAction="#statusDB" prefHeight="52.0" prefWidth="159.0" stylesheets="@cssfile.css" text="Check">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="ent" layoutX="619.0" layoutY="141.0" mnemonicParsing="false" onAction="#enter" prefHeight="52.0" prefWidth="159.0" stylesheets="@cssfile.css" text="Enter">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <TextField fx:id="username" layoutX="213.0" layoutY="150.0" prefHeight="39.0" prefWidth="238.0" promptText="enter username" />
+      <TextField fx:id="password" layoutX="213.0" layoutY="221.0" prefHeight="39.0" prefWidth="238.0" promptText="enter password" />
+      <Label layoutX="72.0" layoutY="488.0" prefHeight="52.0" prefWidth="172.0" text="Data Base Status">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="72.0" layoutY="214.0" prefHeight="52.0" prefWidth="135.0" text="Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="72.0" layoutY="137.0" prefHeight="52.0" prefWidth="135.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

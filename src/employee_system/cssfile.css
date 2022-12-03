@@ -1,0 +1,139 @@
+#lbmessage{
+    -fx-fon-size: 15.0px;
+    -fx-background-color: rgb(32,74,135);
+    -fx-text-fill: rgb(255,255,255);
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 10;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 10;
+}
+.Label{
+    -fx-font-size: 15.0px;
+    -fx-padding: 8 8 8 8;
+    -fx-text-fill: rgb(92,53,102);
+}
+#che{
+    -fx-fon-size: 15.0px;
+    -fx-background-color: rgb(252,233,79);
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 50;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 50;
+}
+#ent{
+    -fx-fon-size: 15.0px;
+    -fx-background-color: rgb(252,233,79);
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 50;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 50;
+}
+#btn1{
+    -fx-fon-size: 15.0px;
+    -fx-background-color: rgb(115,210,22);
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 10;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 10;
+}
+#deleteEmployee{
+    -fx-text-fill: white;
+    -fx-fon-size: 15.0px;
+    -fx-background-color:#ff4d4d;
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 10;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 10;
+}
+#updateEmployrr{
+    -fx-text-fill: white;
+    -fx-fon-size: 15.0px;
+    -fx-background-color:rgb(115,210,22);
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 10;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 10;
+}
+#tf1{
+    -fx-fon-size: 15.0px;
+    -fx-background-color: rgb(32,74,135);
+    -fx-text-fill: rgb(255,255,255);
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 10;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 10;
+}
+#tf2{
+    -fx-fon-size: 15.0px;
+    -fx-background-color: rgb(32,74,135);
+    -fx-text-fill: rgb(255,255,255);
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 10;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 10;
+}
+#lb4{
+    -fx-text-fill: rgb(204,0,0);
+}
+#lb5{
+    -fx-text-fill: rgb(204,0,0);
+}
+#back{
+    -fx-background-color: teal;
+}
+#view{
+    -fx-fon-size: 15.0px;
+    -fx-background-color: rgb(252,233,79);
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 50;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 50;
+}
+#upde{
+    -fx-fon-size: 15.0px;
+    -fx-background-color: rgb(252,233,79);
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 50;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 50;
+}
+#insert{
+    -fx-fon-size: 15.0px;
+    -fx-background-color: rgb(252,233,79);
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 50;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 50;
+}
+#ins{
+    -fx-fon-size: 15.0px;
+    -fx-background-color: rgb(252,233,79);
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 50;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 50;
+}
+#update{
+     -fx-fon-size: 15.0px;
+    -fx-background-color: rgb(252,233,79);
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 50;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 50;
+}
+#delete{
+     -fx-fon-size: 15.0px;
+    -fx-background-color: red;
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 50;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 50;
+}
+#find{
+     -fx-fon-size: 15.0px;
+    -fx-background-color: green;
+    -fx-padding: 8 8 8 8;
+    -fx-background-radius: 50;
+    -fx-border-color: rgb(32,74,135);
+    -fx-border-radius: 50;
+}
