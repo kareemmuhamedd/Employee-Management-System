@@ -48,7 +48,7 @@ public class DBinfo {
             preparedStatement.setString(11, emp.getNationality());
             preparedStatement.setString(12, emp.getMother_language());
             preparedStatement.setString(13, emp.getOther_language());
-            st = preparedStatement.executeUpdate();
+            st = preparedStatement.executeUpdate(); // it will be 0 or 1 like true or false
             con.close();
        } catch (SQLException e) {
        }
@@ -99,7 +99,7 @@ public class DBinfo {
            String sql = "SELECT * FROM `emp` WHERE id=?";
            Connection con = DBinfo.getConnection();
            PreparedStatement preparedStatement = (PreparedStatement)con.prepareStatement(sql);
-           preparedStatement.setInt(1,id);
+           preparedStatement.setInt(1,id); // put in first '?' the id, you will be reseved from the function 
            ResultSet resultSet = preparedStatement.executeQuery();
            if(resultSet.next()){
                emp.setId(resultSet.getInt(1));
@@ -122,7 +122,8 @@ public class DBinfo {
        }
        return emp;
    }
-   public static List<Employee> getEmployee(){
+   
+  /* public static List<Employee> getEmployee(){
        List<Employee> list = new ArrayList<Employee>();
        try {
            String sql = "SELECT * FROM `emp` WHERE 1";
@@ -150,6 +151,6 @@ public class DBinfo {
        } catch (SQLException e) {
        }
        return list;
-   }
+   }*/
 }
 

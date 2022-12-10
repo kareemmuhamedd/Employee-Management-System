@@ -10,10 +10,12 @@ import java.net.URL;
 import java.text.ParseException;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 /**
@@ -22,6 +24,15 @@ import javafx.scene.control.TextField;
  * @author Kareem_Muhamed
  */
 public class UpdateDeleteController implements Initializable {
+    
+    public void entred(Event e){
+        ((Button)e.getSource()).setScaleX(1.1);
+        ((Button)e.getSource()).setScaleY(1.1);
+    }
+    public void exited(Event e){
+        ((Button)e.getSource()).setScaleX(1);
+        ((Button)e.getSource()).setScaleY(1); 
+    }
 
      @FXML
     TextField salary;

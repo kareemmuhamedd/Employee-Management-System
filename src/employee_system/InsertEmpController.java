@@ -10,15 +10,29 @@ import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
 
 public class InsertEmpController implements Initializable {
+    
+    
+    
+    
+    public void entred(Event e){
+        ((Button)e.getSource()).setScaleX(1.1);
+        ((Button)e.getSource()).setScaleY(1.1);
+    }
+    public void exited(Event e){
+        ((Button)e.getSource()).setScaleX(1);
+        ((Button)e.getSource()).setScaleY(1); 
+    }
 
     
     @FXML
@@ -64,8 +78,10 @@ public class InsertEmpController implements Initializable {
         String motherLanguage = moth.getText();
         String otherLanguage = oth.getText();
         String dateOfBirth = datebirth.toString();
+        
         float fSalary = Float.parseFloat(textSalary);
         int iAge = Integer.parseInt(textAge);
+        
         Employee emp = new Employee();
                emp.setFname(firstName);
                emp.setLname(lastName);
@@ -82,7 +98,7 @@ public class InsertEmpController implements Initializable {
                emp.setOther_language(otherLanguage);
                
                
-               int status = DBinfo.save(emp);
+               int status = DBinfo.save(emp); // 0 or 1
                if(status>0){
                    Alert alert = new Alert(AlertType.INFORMATION);
                    alert.setTitle("Data Insert");

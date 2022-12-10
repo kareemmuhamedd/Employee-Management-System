@@ -60,7 +60,7 @@ public class ViewEmpController implements Initializable {
             PreparedStatement preparedStatement = (PreparedStatement)con.prepareStatement(sql);
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()){
-                // i use the constractor that i was created in class Employee
+                // i use the constructor that i was created in class Employee
                 data.add(new Employee(resultSet.getInt(1),resultSet.getString(2),resultSet.getString(3),resultSet.getFloat(4),resultSet.getInt(5),resultSet.getString(6),resultSet.getString(7),resultSet.getString(8)));
             }
             con.close();
@@ -75,8 +75,7 @@ public class ViewEmpController implements Initializable {
         department.setCellValueFactory(new PropertyValueFactory<Employee,String>("department"));
         address.setCellValueFactory(new PropertyValueFactory<Employee,String>("address"));
         date_of_birth.setCellValueFactory(new PropertyValueFactory<Employee,String>("date_of_birth"));
-        
-        table.setItems(data);
+        table.setItems(data); // to show data that i was add to ObservableList
         
     }    
     

@@ -10,13 +10,15 @@ package employee_system;
  * @author Kareem_Muhamed
  */
 public class Admins {
+    
     private int id;
     private String username;
     private String password;
+    
     public Admins(){
         super();
     }
-
+    
     public Admins(int id, String username, String password) {
         this.id = id;
         this.username = username;
